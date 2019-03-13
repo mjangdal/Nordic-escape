@@ -1,35 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    
+    <link rel="stylesheet" href="style.css">
     <title>Nordic Escapes</title>
 </head>
+
 <body>
     <header>
-        <div class="logo-holder">
-            <img src="/images/logo/ne-logo.svg" alt="logo" class="logo">
-        </div>
-        <ul class="meny">
-            <li>Om oss</li>
-            <li>Våra båenden</li>
-            <li>Kontakt</li>
-        </ul>        
+        <a href="index.html"><img src="images/logo/ne-logo.svg" alt="logo" class="logo"></a>
+        <nav>
+            <ul>
+                <li class="menu"><a href="index.html">Om oss</a></li>
+                <li class="menu"><a href="boenden.html">Våra Boenden</a></li>
+                <li class="menu"><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div class="textbox">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vel est minima temporibus possimus illum aliquam, porro, quidem facere commodi distinctio voluptatem deleniti ad eum quas pariatur praesentium consectetur ut.
-            </p>
-            <div> 
-                <img src="../images/stugor/Salasilvergruva/salasilvergruva.jpeg" alt="">
+        <div class="text-box">
+            <div class="text-header">
+                <h1>Vilka är vi?</h1>
+            </div>
+            <div class="all">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa vel est minima temporibus possimus
+                    illum aliquam, porro, quidem facere commodi distinctio voluptatem deleniti ad eum quas pariatur
+                    praesentium consectetur ut.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic dolores, harum tenetur itaque eum
+                    asperiores, perferendis repudiandae quia quis eveniet sed voluptates nesciunt exercitationem id
+                    deleniti aliquam aspernatur aperiam explicabo.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos libero nulla placeat
+                    corrupti. Minima vitae nihil atque eum reiciendis amet magnam molestiae, dolor exercitationem quos
+                    maxime voluptates alias minus temporibus?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt exercitationem laudantium iste
+                    asperiores obcaecati dignissimos blanditiis, perferendis minus. Explicabo similique error
+                    cupiditate quod ex itaque consectetur qui! Quaerat, cumque a!
+                </p>
+            </div>
+            <div class="image-main all">
+                <div class="text-header">
+                    <button onclick="back(counter)"><</button>
+                    <button onclick="forward(counter)">></button>
+                </div>
+                <img src="/images/1.jpg" alt="image" class="image" id="image">
+                
             </div>
         </div>
     </main>
     <footer>
-            <a href="">Facebook</a>
-            <a href="">LinkedIn</a>
-            <a href="">Instagram</a>
+        <ul>
+            <li class="sociala-medier"><a href="">Facebook</a></li>
+            <li class="sociala-medier"><a href="">LinkedIn</a></li>
+            <li class="sociala-medier"><a href="">Instagram</a></li>
+        </ul>
+        <div class="footer-logo"> <a href="index.html"><img src="images/logo/ne-logo.svg" alt="logo" class="logo"></a></div>
+        <ul>
+            <li class="footer-menu"><span id="cookies">Om cookies</span></li>
+            <li class="footer-menu"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+
+
+
     </footer>
+
+    <div id="cookieBox" class="cookie">
+        <div class="cookie-content">
+            <span class="close" id="close">&times;</span>
+            <h3>
+                Om våra cookies
+            </h3>
+            <p>
+                Våra cookies är utsökta och kommer från den mörka sidan. Så ta en och let glad... Eller nått!
+            </p>
+        </div>
+
+    </div>
+    <script src="image.js"></script>
+    <script src="cookie.js"></script>
 </body>
+
 </html>
