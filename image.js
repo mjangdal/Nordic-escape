@@ -2,7 +2,7 @@
 
 
 
-let images = ['/images/1.jpg', '/images/2.jpg', '/images/3.jpg'];
+let images = ['images/1.jpg', 'images/2.jpg', 'images/3.jpg'];
 let counter = 0;
 /* spin image cykle bakwards */
 function back(counter){
